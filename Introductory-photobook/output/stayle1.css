@@ -9,6 +9,16 @@ header {
     padding-top: 80px;
 }
 
+.site-title {
+    width: 160px;
+    line-height: 1px;
+    margin-bottom: 15px;
+}
+
+.site-title a {
+    display: block; 
+}
+
 .header-logo {
     width: 180px;
 }
