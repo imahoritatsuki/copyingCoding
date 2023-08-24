@@ -1,0 +1,149 @@
+
+body {
+    background-color: #FFFFFF;
+    font-size: 0.9rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    max-width: 800px;
+    margin: 60px auto;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.inner-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+header {
+    max-width: 1000px;
+    margin-top: 60px;
+}
+header .site-title {
+    width: 160px;
+    line-height: 0px;
+    margin-bottom: 15px;
+}
+
+header .site-title a {
+    display: block;
+}
+
+/*-------------------------------------------
+メインビジュアル
+-------------------------------------------*/
+.main-visual {
+    background-image: url("img/mainvisual.jpg");
+    background-size: cover;
+    aspect-ratio: 5 / 2;
+}
+
+/*-------------------------------------------
+INDEX
+-------------------------------------------*/
+.index {
+    padding: 40px 0 ;
+    background-color: #F5F5F5;
+}
+.index-lists {
+    border: 1px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.index-lists li {
+    width: fit-content;
+    margin: 0 auto;
+    line-height: 40px;
+    max-width: 80%;
+}
+
+/*-------------------------------------------
+PHOTOS
+-------------------------------------------*/
+.photos-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%
+}
+.photo {
+    width: 49%;
+}
+
+/*-------------------------------------------
+DETAIL
+-------------------------------------------*/
+.detail {
+    padding: 40px 0 ;
+    background-color: #F5F5F5;
+}
+
+.detail-contents {
+    display: flex;
+    margin: 30px 0;
+}
+
+.detail-lists {
+    width: 60%;
+}
+.detail-lists dl {
+    border-right: 1px solid gray;
+}
+.detail-lists dt {
+    font-weight: 600;
+}
+.detail-lists dd {
+    margin-left: 0;
+    padding-bottom: 10px;
+}
+.detail-context {
+    width: 100%;
+    padding-left: 40px;
+}
+
+.detail-context p {
+    padding-bottom: 8px;
+}
+
+@media (max-width: 1024px) {
+    .photos-column {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+    .photo {
+        width: 100%;
+        margin-bottom: 7px; 
+    }
+
+    .detail-contents {
+        display: flex;
+        flex-flow: column;
+    }
+    .detail-lists {
+        width: 100%;
+    }
+    .detail-lists dl {
+        border-bottom: 1px solid gray;
+        border-right: 0;
+        padding-bottom: 30px;
+    }
+    .detail-context {
+        width: 100%;
+        padding-left: 0;
+    }
+}
