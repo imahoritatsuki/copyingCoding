@@ -119,6 +119,20 @@ DETAIL
     padding-bottom: 8px;
 }
 
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+footer {
+    font-size: 5px;
+    text-align: center;
+}
+
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+
+
 @media (max-width: 1024px) {
     .photos-column {
         display: flex;
@@ -132,7 +146,7 @@ DETAIL
 
     .detail-contents {
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
     }
     .detail-lists {
         width: 100%;
