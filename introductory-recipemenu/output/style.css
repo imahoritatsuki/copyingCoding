@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, "Hiragino Sans", Meiryo, sans-serif;
+}
+
+h1 {
+    font-size: 38px;
+}
+.main-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main-visual img {
+    max-height: 1280px;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+section {
+    margin: 0 autor;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.recipe-diary p {
+    margin: 8px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.photo {
+    flex:1;
+    height: 500px;
+    overflow: hidden;
+    display:flex;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photos img {
+    max-width:100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.list-button a {
+    border: 0.2px solid gray;
+    color: black;
+    padding: 20px 60px;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 80px;
+    text-align: center;
+}
+footer a {
+    color: black;
+    font-size: small;
+    padding: 0 10px;
+}
+
+footer p {
+    font-size: small;
+}
+
+
+@media (max-width: 834px) {
+    .photos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .photo {
+        flex:auto;
+        height: 500px;
+        overflow: hidden;
+    }
+    .photos img {
+        width: 100%;  /* 画面幅に合わせて拡大・縮小 */
+        height: 100%;  /* 最大高さを親要素と同じに */
+        object-fit: cover;  /* アスペクト比を維持しつつ親要素にフィット */
+        object-position: center;  /* 画像の中央を基点に */
+    }
+}
